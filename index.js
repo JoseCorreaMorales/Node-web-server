@@ -21,6 +21,16 @@ app.get('/users', (req, res) => {
     })
 })
 
+app.get('/users/:id', (req, res) => {
+    let { params: { id } } = req
+    let user = Service.getUser(id);
+
+    res.json({
+        message: `single with id: ${id}` ,
+        body: user
+    })
+ })
+
 
 app.post('/users', (req, res) => {
     //let newUser = req.body;
@@ -30,8 +40,17 @@ app.post('/users', (req, res) => {
         message: 'User Created',
         body:  user
     })
-    
 })
+
+
+app.put('/users/:id', (req, resp) => {
+
+ })
+
+
+app.delete('/users/:id', (req, resp) => {
+
+ })
 
 app.listen(PORT, () => { 
     console.log(`Server listening on http://localhost:${PORT}`)
