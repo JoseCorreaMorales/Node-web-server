@@ -26,7 +26,7 @@ app.post('/users', (req, res) => {
     //let newUser = req.body;
     let { body: newUser } = req;
     let user =  Service.createuser(newUser);
-    res.json({
+    res.status(201).json({
         message: 'User Created',
         body:  user
     })
