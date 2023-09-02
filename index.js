@@ -43,7 +43,15 @@ app.post('/users', (req, res) => {
 })
 
 
-app.put('/users/:id', (req, resp) => {
+app.put('/users/:id', (req, res) => {
+    let identifier = req.params.id;
+    let { body: UdapteData } = req;
+    let user = Service.updateUser(identifier, UdapteData);
+
+    res.json({
+       message: `user with id: ${identifier} updated`,
+        body: user
+    })
 
  })
 

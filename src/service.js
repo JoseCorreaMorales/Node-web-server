@@ -2,7 +2,7 @@ const data = require('./MOCK_DATA.json');
 
 module.exports = {
     getUsers: () => data,
-    
+
     getUser: (id) => {
         let identifier = Number(id)
 
@@ -19,5 +19,20 @@ module.exports = {
         data.push(newUser);
 
         return newUser;
+    },
+
+    updateUser: (identifier, updateData) => {
+        let id = Number(identifier);
+        /* find the user */
+        let usuario = data.filter((user) => user.id === id)[0];
+        console.log(usuario);
+        console.log(updateData);
+        /* replacing data */
+        usuario.first_name = updateData.first_name;
+        usuario.last_name = updateData.last_name;
+        usuario.email = updateData.email;
+
+        return usuario;
     }
+
 };
