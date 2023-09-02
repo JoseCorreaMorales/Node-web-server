@@ -2,6 +2,18 @@
  
  This is a simple web server built with Node.js and Express. It allows you to perform CRUD operations on a list of users stored in a JSON file.
 
+
+ <p align="center">
+ <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Icon" />
+  <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Icon" />
+ <img src="https://img.shields.io/badge/-JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Icon" />
+  <img src="https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js Icon" />
+  <img src="https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman Icon" />
+  <img src="https://img.shields.io/badge/-JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON Icon" />
+  <img src="https://img.shields.io/badge/-REST%20API-FF6C37?style=for-the-badge" alt="REST API Icon" />
+ 
+ </p>
+
 ## Installation
 1. Clone the repository.
 2. Install the dependencies with *`npm install`*.
@@ -64,5 +76,12 @@ json
 }
 
 ```
+
+## Resources
+
+* [Node.js](https://nodejs.org/en/)
+* [Express](https://expressjs.com/)
+* [Postman](https://www.postman.com/)
+* [JSON MOCK DATA](https://www.mockaroo.com/)
 ## License
 This project is licensed under the ISC License.
