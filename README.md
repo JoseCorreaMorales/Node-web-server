@@ -39,7 +39,7 @@ To send parameters using Postman, follow these steps:
 
 For example, to create a new user, you can send a POST request to *`http://localhost:3000/users`* with the following JSON in the request body:
 ```js
-json
+
 { 
     "first_name": "Bruce",
     "last_name": "Billsberry",
@@ -53,7 +53,6 @@ This will create a new user with the details provided in the request body. You c
 To create a new user, send a POST request to http://localhost:3000/users with the following JSON payload:
 
 ```json
-json
 {
         "first_name": "Skipton",
         "last_name": "Sola",
@@ -64,11 +63,10 @@ json
 The server will respond with a JSON object containing the new user:
 
 ```json
-json
 {
   "message": "User Created",
   "body": {
-        "id": x,
+        "id": "x",
         "first_name": "Kirby",
         "last_name": "O' Shea",
         "email": "koshea2l@jigsy.com"
