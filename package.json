@@ -1,14 +1,14 @@
 {
   "name": "node-web-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "CRUD USING NODEJS AND EXPRESS ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev" : "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "jose correa m.",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
