@@ -33,6 +33,18 @@ module.exports = {
         usuario.email = updateData.email;
 
         return usuario;
+    },
+
+    deleteUser: (identifier) => {
+        let id = Number(identifier);
+
+        let user = data.filter((user) => user.id === id);
+
+        let index = data.indexOf(user[0]);
+
+        data.splice(index, 1);
+        
+        return user;
     }
 
 };

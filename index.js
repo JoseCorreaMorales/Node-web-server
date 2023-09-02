@@ -57,7 +57,13 @@ app.put('/users/:id', (req, res) => {
 
 
 app.delete('/users/:id', (req, resp) => {
+    let identifier = req.params.id;
+    let user = Service.deleteUser(identifier);
 
+    resp.status(200).json({
+        message: `user with id: ${identifier} deleted`,
+        body: user
+    })
  })
 
 app.listen(PORT, () => { 
